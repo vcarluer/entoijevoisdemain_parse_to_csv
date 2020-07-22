@@ -56,7 +56,7 @@ for pub in list(soup.body.find_all('div', class_='pam')):
 
     lines = csv_content.split('\n')
     csv_title = lines[0]
-    if len(csv_title) > 117:
+    if len(csv_title) > 120:
         csv_title = csv_title[:117] + '...'
     print(f'|-title: {csv_title}')
     csv_content = csv_content.replace('\n', '\\n')
